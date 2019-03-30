@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Oxygen:300,400,700");
+.defaultFont, .default-font-gray, .default-font-black, .default-mini-gray, .default-mini-gray-bold, .default-font-black-bold, .labelFactory-black, .labelFactory-white, .miniFontUpCase, .miniFont-gray, .miniFont-black, .miniFont-gray-bold, .miniParagraph, .miniParagraph-blue, .miniParagraph-black, .miniNav, .minInbox {
+  font-family: "Oxygen", sans-serif;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased; }
+
+.default-font-gray {
+  font-size: 30px;
+  font-weight: 400;
+  color: #7A7A7A; }
+
+.default-font-black {
+  font-size: 40px;
+  font-weight: 400;
+  color: #000000; }
+
+.default-mini-gray {
+  font-size: 18px;
+  font-weight: 400;
+  color: #7A7A7A; }
+
+.default-mini-gray-bold {
+  font-size: 18px;
+  font-weight: 700;
+  color: #7A7A7A; }
+
+.default-font-black-bold {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000; }
+
+.labelFactory-black {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000000; }
+
+.labelFactory-white {
+  font-size: 40px;
+  font-weight: 700;
+  color: #FFFFFF; }
+
+.miniFontUpCase {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase; }
+
+.miniFont-gray {
+  font-size: 14px;
+  font-weight: 400;
+  color: #7A7A7A; }
+
+.miniFont-black {
+  font-size: 14px;
+  font-weight: 700;
+  color: #363636; }
+
+.miniFont-gray-bold {
+  font-size: 14px;
+  font-weight: 700;
+  color: #7A7A7A; }
+
+.miniParagraph {
+  font-size: 18px;
+  font-weight: 400;
+  color: #7A7A7A; }
+
+.miniParagraph-blue {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0074D9; }
+
+.miniParagraph-black {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000; }
+
+.miniNav {
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFFFFF; }
+
+.minInbox {
+  font-size: 25px;
+  font-weight: 700;
+  color: #000000; }
+
+@media screen and (max-width: 1281px) {
+  .labelFactory-black {
+    font-size: 33px; }
+
+  .default-font-black {
+    font-size: 25px; }
+
+  .miniParagraph {
+    font-size: 17px; } }
+
+/*# sourceMappingURL=typography.css.map */

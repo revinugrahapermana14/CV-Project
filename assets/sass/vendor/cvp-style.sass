@@ -1,0 +1,1779 @@
+@import ../partials/base
+
+body
+	overflow-x: hidden
+	@extend .defaultFont
+
+	&::-webkit-scrollbar
+		width: 0.5rem
+	&::-webkit-scrollbar-track
+		-webkit-background-color: inset 0 0 6px rgba(0,0,0,0.3)
+	&::-webkit-scrollbar-thumb
+		background-color: $gray
+		border-radius: 50px
+
+.wrapper-mobile
+	display: none
+
+.container-fluid
+	height: auto
+	width: 100%
+	padding-left: 10rem
+	padding-right: 10rem
+
+.content
+	width: 100%
+
+.section-carousel
+	height: auto
+	margin-left: -10rem
+	margin-right: -10rem
+	overflow: hidden
+
+.item-img
+		& img
+			object-fit: cover
+			height: 100vh
+			object-position: 0% 0%
+			filter: brightness(0.8)
+
+.fixed-materialize
+		& nav
+			background: none
+			box-shadow: none
+			height: 95px
+			line-height: 95px
+
+.section-carousel
+	& .owl-carousel
+			& .owl-nav
+				position: absolute
+				right: 25rem
+				top: 50%
+				& button
+					margin-right: 5rem
+					display: flex
+					justify-content: center
+					align-items: center
+					float: left
+
+					&:nth-last-child(1)
+						margin-right: 0
+					& img
+						object-fit: contain
+						height: 1.2rem
+
+			& .owl-dots
+				position: absolute
+				width: 5.6rem
+				height: 1.4rem
+				right: 11.7rem
+				top: 50%
+				overflow: hidden
+
+				& button
+					background: $doubleGray
+					height: 6px
+					width: 24px
+					margin-right: 6px
+					display: block
+					float: left
+					margin-bottom: 6px
+
+					&.active
+						background: $white
+
+					&:nth-child(3)
+						margin-right: 0
+					&:nth-last-child(1)
+						margin-right: 0
+
+.item-arrow
+		width: 37px
+		margin: 0 auto
+		position: absolute
+		z-index: 100
+		left: 0
+		right: 0
+		bottom: 25px
+		display: flex
+		justify-content: center 
+		& img
+			object-fit: contain
+			height: 2.3rem
+
+.item-text
+	position: absolute
+	z-index: 999
+	top: 50%
+	left: 10rem
+	& span
+		line-height: 0
+		@extend .labelFactory-white
+
+
+.content-title
+	margin-left: -10rem
+	margin-right: -10rem
+	background: $grayBg
+
+.main-content-title
+	padding-top: 7rem
+	padding-bottom: 6rem
+
+.mc-value
+	padding-right: 3rem
+	padding-left: 2rem
+	& .heading-mc-value
+		min-height: 5rem
+		@extend .default-font-black-bold
+		& span
+			display: block
+			&.xs-title-wlc
+				margin-top: 1rem
+				@extend .miniFont-gray-bold
+	& p
+		margin-top: 20px
+		@extend .default-font-gray
+
+.lid-main
+	padding: 1.5rem 2rem 1.5rem 2rem
+	& a
+		& span
+			@extend .miniFontUpCase
+			margin-right: 0.7rem
+		& img
+			transform: translateY(2px)
+
+.main-list
+	padding-top: 15rem
+	padding-bottom: 7rem
+
+.section_s1
+	margin-left: -10rem
+	background-color: $grayBg
+	padding-left: 10rem
+	min-height: 25rem
+	& .row
+		& .col 
+			padding: 0
+			position: relative
+
+.section_s2
+	margin-right: -7rem
+	margin-top: 8rem
+	padding-right: 7rem
+	max-height: 41rem
+	overflow: hidden
+	& .row
+		& .col
+			position: relative
+			padding: 0
+	& .porsBlock
+		background: $grayBg
+		height: 59rem
+		width: 50.98rem
+		position: absolute
+		z-index: 0
+		right: 0
+		margin-top: -13rem
+
+.section_s3
+	position: relative
+	margin-top: 5rem
+	max-height: 37rem
+	& .porsBlock-left
+		position: absolute
+		z-index: 0
+		background: #f9f9f9
+		height: 55rem
+		left: -10rem
+		width: 57.7rem
+		top: 22rem
+	& .row
+		& .col
+			padding: 0
+			position: relative
+
+.section_s4
+	position: relative
+	z-index: 99
+	width: 100%
+	height: auto
+	display: flex
+	& .row
+		& .col
+			position: relative
+			padding: 0
+			z-index: 99
+			line-height: 0
+			& .md-little-m
+				& img
+					height: 36rem
+			& .md-little-s
+				transform: translateY(18rem)
+				& img
+					height: 25rem
+		& .ldirect-hg-direction
+			display: flex
+			justify-content: flex-end
+			& .ldirect-title-bottom
+				background: $lightgray
+				height: 12rem
+				min-width: 30%
+				padding-left: 5rem
+				padding-right: 5rem
+				display: flex
+				justify-content: center
+				align-items: center
+				& span
+					@extend .minInbox
+
+
+
+.little-xs-img
+	display: flex
+	flex-direction: column
+	& img
+		object-fit: cover
+		width: 100%
+		position: relative
+
+.little-md-img
+	& img
+		object-fit: cover
+		width: 100%
+		height: 22rem
+		object-position: 4% 70%
+		position: relative
+
+.ldirect-l-img
+	& img
+		object-fit: cover
+		width: 100%
+		position: relative
+		z-index: 10
+		&:nth-last-child(1)
+			height: 35rem
+		&.ldirect-one
+			object-fit: cover
+			height: 50rem
+			object-position: 0% 26%
+
+.ldirect-hs-direction
+	display: flex
+	justify-content: flex-start
+
+.ldirect-title-top
+	background: $lightgray
+	min-width: 30%
+	padding-left: 5rem
+	padding-right: 5rem
+	margin-top: -5rem
+	height: 12rem
+	display: flex
+	justify-content: center
+	align-items: center
+	& span
+		line-height: 0
+		@extend .minInbox
+
+.vl-ldirect
+	display: flex
+	align-items: flex-end
+	height: 41rem
+	padding-bottom: 7rem
+	& .ldirect-title-left
+		background: $lightgray
+		height: 12rem
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 100%
+		& span
+			@extend .minInbox
+
+.vl-ldirect-top
+	align-items: flex-start
+	padding-bottom: 0
+	padding-top: 10rem
+	@extend .vl-ldirect
+
+
+.ldirect-lr-img
+	& img
+		object-fit: cover
+		height: 37rem
+		width: 100%
+		object-position: 98% 0%
+
+.footer-v
+	background: $lightgray
+	position: relative
+	width: 100%
+	height: auto
+	z-index: 99
+	& .container-fluid
+		padding-top: 5rem
+		padding-bottom: 3rem
+		& .row
+			margin: 0
+			& .col
+				& .brand-footer
+					height: 3rem
+					display: flex
+					justify-content: flex-start
+					align-items: center
+				& .lt-brand
+					height: 3rem
+					display: flex
+					justify-content: flex-start
+					align-items: center
+					@extend .miniFont-black
+				& .list-footer
+					height: 3rem
+					display: flex
+					justify-content: flex-start
+					align-items: center
+					& ul
+						& li
+							display: inline
+							margin-right: 4.6rem
+						&:nth-last-child(1)
+							margin-right: 0
+							& a
+								@extend .miniFontUpCase
+				& .inf-footer
+					height: 4rem
+					flex-direction: column
+					display: flex
+					justify-content: center
+					align-items: flex-start
+					& span
+						display: block
+						text-align: center
+						@extend .miniFont-black
+				& .address-footer
+					display: flex
+					justify-content: flex-start
+					align-items: center
+					height: 4rem
+					padding-right: 5.8rem
+					& span
+						display: block
+						@extend .miniFont-gray
+				& .copyright-footer
+					height: 4rem
+					display: flex
+					justify-content: center
+					align-items: center
+					& .cpr-tag
+						width: 100%
+						& .cp-right
+							float: left
+							margin-right: 1rem
+							@extend .miniFont-gray
+					& .liner
+						float: left
+						width: 56%
+					&:after
+						content: ''
+						position: absolute
+						height: 0.8px
+						background: $gray
+						width: 55%
+						right: 0	
+				&.l12
+					padding: 0
+					margin-bottom: 3rem
+				&:nth-last-child(1)
+					margin-bottom: 0
+				&.l5
+					padding: 0
+
+.sect-full
+	background-color: $grayBg
+	display: flex
+	justify-content: center
+	align-items: center
+	padding: 0 $default
+	height: 100vh
+
+.section_s5
+	padding-top: 8rem
+	padding-bottom: 0rem
+	min-height: 20rem
+
+.section_s6
+	padding-bottom: 15rem
+	& .blokboxz
+		background: $grayBg
+		height: 53rem
+		position: absolute
+		width: 40rem
+		z-index: 0
+		margin-top: -75px
+		left: -7rem
+	& .row
+		& .col
+			position: relative
+			z-index: 99
+			padding: 0
+
+.img-column
+	line-height: 0
+	& img
+		object-fit: cover
+		&:first-child
+			height: 40rem
+		&:nth-last-child(1)
+			height: 24.5rem
+			margin-left: 4rem
+
+.percentage
+	margin-top: 7rem
+	& .block-percentage
+		margin-bottom: 3rem
+		& .head-percentage
+			@extend .miniFont-gray-bold
+		& .body-percentage
+			& ul
+				& li
+					list-style: none
+					@extend .default-font-black
+					& .mini-prcnt
+						@extend .miniFont-gray-bold
+
+
+.section_s7
+	background: $grayBg
+	margin-left: -10rem
+	margin-right: -10rem
+	padding: 5rem 10rem 5rem 10rem
+	height: auto
+
+.head-lmt
+	& .desc-lmt
+		margin-top: 6rem
+		padding-right: 3rem
+		@extend .labelFactory-black
+
+.pict-lmt
+	margin-top: -12rem
+	& img
+		object-fit: cover
+		height: 25rem
+		width: 100%
+		object-position: 1%
+
+.lmt-prgrph
+	@extend .default-font-black
+
+.lmt-mini-prgraph
+	padding-top: 1.2rem
+	@extend .miniParagraph
+
+.section_s8
+	padding-top: 7rem
+	& .row
+		margin: 0
+
+.fwl
+	padding-right: 22px $default
+	margin-bottom: 1rem
+
+.wit-title
+	padding-right: 10rem
+	@extend .labelFactory-black
+	& span
+		display: block
+		line-height: 1.3
+
+.floyd-wd
+	min-height: 15rem
+	& .title-wd
+		@extend .default-font-black
+	& p
+		margin-top: 12px
+		font-size: 19px
+		@extend .miniParagraph
+
+.fl-img
+	& img
+		object-fit: cover
+		height: 36rem
+
+.head-fl
+	& .list-img
+		& li
+			list-style: none
+			display: inline-block
+			margin-right: 1rem
+			& img
+				object-fit: contain
+				height: 5rem
+			&:nth-last-child(1)
+				margin-right: 0
+
+.section_s9
+	padding-top: 7rem
+	padding-bottom: 10rem
+	&::before
+		content: ''
+		position: absolute
+		height: 35rem
+		width: 60%
+		background-color: $grayBg
+		left: -10rem
+		z-index: 0
+		transform: translateY(-5rem)
+	& .row
+		& .col
+			position: relative
+			z-index: 99
+
+.body-fl
+	& span
+		display: block
+		&.hg-title
+			@extend .labelFactory-black
+			margin-bottom: 20px
+		&.substans-title
+			@extend .default-font-black
+			line-height: 35px
+			margin-bottom: 30px
+	& p
+		@extend .miniParagraph
+
+.section_10
+	margin-left: -10rem
+	margin-right: -10rem
+	overflow: hidden
+	height: 100vh
+	display: flex
+	justify-content: center
+	align-items: center
+
+.in-full-image
+	line-height: 0
+	position: absolute
+	width: 106%
+	z-index: 0
+	& img
+		object-fit: cover
+		width: 100%
+		height: 100vh
+		object-position: bottom
+
+.body-content-fm
+	position: relative
+	z-index: 99
+	padding: 0rem 10rem 0rem 10rem
+	& .wrapper-fm
+		padding-right: 50rem
+		& .title-fm
+			@extend .labelFactory-black
+		& p
+			@extend .default-font-gray
+		& button
+			background: transparent
+			border: 0
+			cursor: pointer
+			& img
+				margin-right: 15px
+			& span
+				text-decoration: underline
+				@extend .miniParagraph-blue
+
+.section_s11
+	padding: 0 $default
+	display: flex
+	justify-content: center
+	align-items: center
+	height: 100vh
+
+.left-round
+	& .title-round
+		@extend .labelFactory-black
+	& p
+		padding-right: 10rem
+		@extend .default-font-gray
+	& .inTouch
+		@extend .default-font-gray
+
+.right-round
+	& span
+		display: block
+		&.little-round
+			margin-bottom: 1rem
+			@extend .default-mini-gray-bold
+		&.addressing
+			padding-right: 5rem
+			margin-bottom: 2rem
+			@extend .default-font-black
+	& .detail-round
+		margin-bottom: 3rem
+		& li
+			@extend .default-font-black
+			list-style: none
+			& a
+				@extend .default-font-black
+				text-decoration: underline
+	& .seeMap
+		text-decoration: underline
+		@extend .default-font-black
+
+
+
+.section_s12
+	padding-bottom: 10rem
+	& .img-map
+		& img
+			width: 100%
+			object-fit: cover
+			object-fit: center
+
+.blackFont
+	& p
+		color: $black
+
+nav ul a:hover
+	background-color: transparent
+
+.pull-right
+	float: right $default
+
+.lmt-prgrph
+	padding-right: 2rem
+
+.mailCenter
+	margin-top: 3rem
+	margin-bottom: 5rem
+	& input[type=email]
+		width: 17rem $default
+		padding-right: 3.5rem
+
+.arrowButton
+	border: 0
+	background: none
+	position: absolute
+	margin-top: 13px
+	margin-left: -3.2rem
+
+.disabled-btn
+	opacity: 0.3
+
+.enabled-btn
+	opacity: 1
+
+
+// ======
+
+@media screen and (min-width: 1920px)
+	.section_s1
+		max-height: 47rem
+
+	.footer-v
+		& .container-fluid
+			& .row
+				& .col
+					& .list-footer
+						& ul
+							& li
+								margin-right: 8.2rem
+
+	.little-md-img
+		& img
+			height: 30rem
+
+	.ldirect-l-img
+		& img
+			&:nth-last-child(1)
+				height: 50rem
+
+	.section_s2
+		margin-top: 15rem
+		& .porsBlock
+			width: 63.8rem
+
+	.ldirect-l-img img.ldirect-one
+		object-fit: cover
+
+	.footer-v .container-fluid .row .col .copyright-footer:after
+		height: 1px
+
+	.section_s3 .porsBlock-left
+		width: 72.7rem
+
+	.fixed-materialize nav
+		height: 130px
+		line-height: 126px
+
+	.scrollizer nav
+		height: 100px $default
+		line-height: 97px $default
+
+	.head-lmt .desc-lmt
+		padding-right: 9rem
+
+	.floyd-wd
+		min-height: 12rem
+	
+	.wit-title
+		padding-right: 20rem
+
+	.fl-img img
+		height: 47rem
+
+	.body-content-fm
+		padding: 0rem 10rem 0rem 10rem
+
+	.section_s11
+		padding-top: 20rem
+		padding-bottom: 12rem
+
+	.right-round span.addressing
+		padding-right: 7rem
+
+@media screen and (max-width: 1680px)
+
+	.container-fluid
+		padding-left: 9rem
+		padding-right: 9rem
+	
+	.ldirect-l-img img:nth-last-child(1)
+		height: 42rem
+
+	.little-md-img img
+		height: 23rem
+
+	.section_s1
+		max-height: 41.2rem
+
+	.section_s2
+		margin-top: 14rem
+
+	.section_s2 .porsBlock
+		width: 56rem
+
+	.section_s3 .porsBlock-left
+		width: 64.9rem
+
+	.footer-v .container-fluid .row .col .list-footer ul li
+		margin-right: 6.5rem
+
+	.footer-v .container-fluid .row .col .copyright-footer:after
+		height: 1px
+
+	.footer-v .container-fluid .row .col .address-footer
+		padding-right: 9.2rem
+
+	.fixed-materialize nav
+		height: 130px
+		line-height: 126px
+
+	.scrollizer nav
+		height: 100px $default
+		line-height: 97px $default
+
+	.section_s7
+		padding: 8rem 10rem 6rem 10rem
+
+	.lmt-prgrph
+		padding-right: 6rem
+
+	.head-lmt .desc-lmt
+		padding-right: 9rem
+
+	.floyd-wd
+		min-height: 12rem
+	
+	.wit-title
+		padding-right: 12rem
+
+	.fl-img img
+		height: 40rem
+
+	.body-content-fm
+		padding: 0rem 10rem 0rem 10rem
+
+	.section_s11
+		padding-top: 20rem
+		padding-bottom: 12rem
+
+@media screen and (max-width: 1600px)
+	
+	.container-fluid
+		padding-left: 8rem
+		padding-right: 8rem
+
+	.section_s1
+		max-height: 39.6rem
+
+	.section_s2 .porsBlock
+		width: 53.4rem
+		margin-top: -18rem
+
+	.section_s3 .porsBlock-left
+		width: 62.8rem
+
+	.footer-v .container-fluid .row .col .list-footer ul li
+		margin-right: 6rem
+
+	.floyd-wd
+		min-height: 15rem
+
+	.fl-img img
+		height: 40rem
+
+	.body-content-fm
+		padding: 0rem 10rem 0rem 10rem
+
+	.section_s11
+		padding-top: 18rem
+
+	.footer-v .container-fluid .row .col .address-footer
+		padding-right: 8.8rem
+
+	.section_s7
+		padding: 8rem 10rem 5rem 10rem
+
+@media screen and (max-width: 1540px)
+	.container-fluid
+		padding-left: 10rem
+		padding-right: 10rem
+
+	.section_s1
+		max-height: 36rem
+
+@media screen and (max-width: 1520px)
+	.section_s1
+		max-height: 35.5rem
+
+	.section_s2
+		margin-top: 10rem
+		& .porsBlock
+			width: 50.5rem
+
+	.section_s3
+		& .porsBlock-left
+			width: 57.2rem
+
+	.ldirect-l-img
+		& img
+			&.ldirect-one
+				object-fit: cover
+				height: 41rem
+				width: 100%
+
+@media screen and (max-width: 1500px)
+	.section_s1
+		max-height: 34.9rem
+
+	.section_s2
+		margin-top: 12rem
+		& .porsBlock
+			width: 49.8rem
+
+	.section_s3
+		& .porsBlock-left
+			width: 56.5rem
+
+	.ldirect-l-img
+		& img
+			&.ldirect-one
+				object-fit: cover
+				height: 41rem
+				width: 100%
+
+	.title-wd
+		font-size: 25px $default
+
+@media screen and (max-width: 1440px)
+
+	.container-fluid
+		padding-left: 7rem
+		padding-right: 7rem
+
+	.section_s1
+		max-height: 35.9rem
+
+	.ldirect-l-img img:nth-last-child(1)
+		height: 33rem
+
+	.section_s2 .porsBlock
+		width: 48rem
+		margin-top: -18rem
+
+	.vl-ldirect, .vl-ldirect-top
+		height: 33rem
+
+	.section_s3
+		margin-top: 3rem
+
+	.section_s4
+		margin-top: 5rem
+
+	.section_s3 .porsBlock-left
+		width: 57.9rem
+
+	.footer-v .container-fluid .row .col .list-footer ul li
+		margin-right: 4.7rem
+
+	.footer-v .container-fluid .row .col .address-footer
+		padding-right: 6.3rem
+
+	.floyd-wd
+		min-height: 17rem
+
+	.wit-title
+		padding-right: 8rem
+
+	.section_s9
+		margin-top: -4rem
+
+	.body-content-fm .wrapper-fm
+		padding-right: 40rem
+
+	.body-content-fm
+		padding: 0rem 10rem 0rem 10rem
+
+	.fl-img img
+		height: 34rem
+
+	.right-round span.addressing
+		padding-right: 4rem
+
+@media screen and (max-width: 1366px)
+
+	.section_s1
+		max-height: 33.8rem
+
+	.little-md-img img
+		height: 21rem
+
+	.section_s2 .porsBlock
+		margin-top: -16rem
+		width: 45.6rem
+
+	.section_s3 .porsBlock-left
+		width: 54.9rem
+
+	.footer-v .container-fluid .row .col .list-footer ul li
+		margin-right: 4.2rem
+
+	.footer-v .container-fluid .row .col .address-footer
+		padding-right: 5.3rem
+
+@media screen and (max-width: 1360px)
+
+	.section_s1
+		max-height: 33.5rem
+
+	.section_s2 .porsBlock
+		width: 45.4rem
+
+	.section_s3 .porsBlock-left
+		width: 54.8rem
+
+@media screen and (max-width: 1281px)
+
+	.container-fluid
+		padding-left: 5rem
+		padding-right: 5rem
+
+	.section_s1
+		max-height: 29.7rem
+		& .row
+			& .col
+				& .little-xs-img
+					& .ldirect-md
+						height: 18rem
+				& .little-md-img
+					& img
+						height: 18rem
+				& .ldirect-hs-direction
+					& .ldirect-title-top
+						height: 10rem
+				& .ldirect-l-img
+					& img
+						height: 28rem
+	.section_s2
+		margin-top: 8rem
+		& .porsBlock
+			width: 42.7rem
+
+	.section_s3 
+		margin-top: 3rem
+		& .porsBlock-left
+			width: 53.7rem
+
+	.main-content-title
+		padding-left: 3rem
+		padding-right: 3rem
+
+	.wlc-text
+		padding-left: 3rem
+		padding-right: 3rem
+	
+	.mc-value
+		& p
+			margin-top: 0
+			font-size: 28px
+
+	div.img-column
+		& img
+			&:first-child
+				height: 35rem
+			&:nth-last-child(1)
+				height: 20.5rem
+				margin-left: 3rem
+
+	.section_s6
+		& div.blokboxz
+			height: 50rem
+			width: 36rem
+			margin-top: -50px
+
+	div.percentage
+		margin-top: 3rem
+
+	div.wit-title
+		& span
+			font-size: 38px
+
+	div.floyd-wd
+		min-height: 18rem
+
+	.title-wd
+		font-size: 27px
+
+	.fl-img
+		& img
+			height: 32rem
+
+	.body-content-fm 
+		& .wrapper-fm
+			padding-right: 40rem
+
+	.in-full-image
+		width: 107%
+
+	.footer-v
+		& .container-fluid
+			& .row
+				& .col
+					& .list-footer
+						& ul
+							& li
+								margin-right: 3.8rem
+					& .address-footer
+						padding-right: 4.8rem
+
+@media screen and (max-width: 1024px)
+
+	.section-carousel .owl-carousel .owl-nav
+		right: 21rem
+
+	.section-carousel .owl-carousel .owl-dots
+		width: 6rem
+
+	.mc-value p
+		font-size: 25px
+
+	.section_s2 .porsBlock
+		width: 35.3rem
+
+	.section_s1
+		max-height: 27.5rem
+
+	.section_s1 .row .col .ldirect-l-img img
+		height: 26rem
+
+	.ldirect-title-left span
+		font-size: 20px $default
+
+	.ldirect-l-img img:nth-last-child(1)
+		height: 28rem
+
+	.vl-ldirect, .vl-ldirect-top, .vl-ldirect-top
+		height: 28rem
+
+	.ldirect-lr-img img
+		height: 28rem
+
+	.vl-ldirect-top
+		padding-top: 5rem
+
+	.section_s4 .row .col .md-little-m img
+		height: 28rem
+
+	.section_s4 .row .col .md-little-s img
+		height: 22rem
+
+	.section_s3 .porsBlock-left
+		width: 45.4rem
+		height: 39.4rem
+
+	.ldirect-title-top span
+		font-size: 20px $default
+
+	.ldirect-title-bottom span
+		font-size: 20px $default
+
+	.section_s4 .row .col .md-little-s
+		transform: translateY(11rem)
+
+	.footer-v .container-fluid .row .col .list-footer ul li
+		margin-right: 1.7rem
+
+	.footer-v .container-fluid .row .col .address-footer
+		padding-right: 0.8rem
+
+	.section_s4 .row .ldirect-hg-direction .ldirect-title-bottom
+		height: 11rem
+
+	.footer-v .container-fluid .row .col .copyright-footer:after
+		width: 40%
+
+	.img-column img:first-child
+		height: 35rem
+		width: 60%
+
+	.img-column img:nth-last-child(1)
+		height: 17.5rem
+
+	div.floyd-wd
+		min-height: 14rem
+
+	.title-wd
+		font-size: 20px !important
+
+	.floyd-wd p
+		margin-top: 12px
+		font-size: 15px
+	
+	div.wit-title span
+		font-size: 30px
+
+	.fl-img img
+		height: 32rem
+		width: 91%
+
+	.section_s9::before
+		height: 30rem
+		width: 67%
+		transform: translateY(-3rem)
+
+	.body-content-fm .wrapper-fm
+		padding-right: 26rem
+
+	.left-round p
+		padding-right: 7rem
+
+@media screen and (max-width: 600px)
+	
+	@mixin font-title()
+		font-size: 33px
+		font-weight: $mediumBold
+		color: $black
+	
+	.wrapper-dekstop
+		display: none
+
+	.wrapper-mobile
+		display: block
+
+	.container-mobile
+		padding-left: 15px
+		padding-right: 15px
+		width: 100%
+
+	.container-mobile-footer
+		padding-left: 35px
+		padding-right: 35px
+		padding-top: 40px
+		padding-bottom: 60px
+
+	// copy
+	.navbar-mobile
+		position: fixed
+		& nav
+			background-color: transparent
+			display: flex
+			align-items: center
+			line-height: unset
+			height: 15%
+			box-shadow: none
+			transition: 0.6s ease-in-out
+			& .nav-wrapper
+				height: auto
+				width: 100%
+
+	.brand
+		float: left
+		line-height: 0
+		margin-top: 7px
+		& img
+			object-fit: contain
+			height: 2rem
+
+	.bulletBar
+		float: right
+		background-color: $white
+		height: 40px
+		width: 40px
+		border: 0
+		border-radius: 50px
+		display: flex
+		justify-content: center
+		align-items: center
+		padding-left: 10px
+		padding-right: 10px
+		& .bulletWrapper
+			width: 100%
+			& span
+				display: block
+				height: 3px
+				background: $black
+				margin-bottom: 3px
+				float: left
+				border-radius: 50px
+				&:first-child
+					width: 10px
+				&:nth-child(2)
+					width: 15px
+				&:nth-last-child(1)
+					width: 11px
+					float: right
+					margin-bottom: 0
+		&:focus
+			background: $white
+
+	.rotationImg
+		transform: rotate(0deg)
+		transition: 1.4s ease-in-out
+
+	.normalRotation
+		transform: rotate(27deg)
+		transition: 0.1s ease-in-out
+
+	.bulletSide
+		display: none
+		background-color: $lightgray
+		position: fixed
+		z-index: 999
+		top: 0
+		width: 100%
+		height: 100vh
+
+	.toFullBar
+		width: 100% $default
+		transition: 0.6s ease-in-out
+
+	.basicBar
+		transition: 0.6s ease-in-out
+		&:first-child
+			width: 10px
+		&:nth-child(2)
+			width: 15px
+		&:nth-last-child(1)
+			width: 11px
+			float: right
+			margin-bottom: 0
+
+	.list-Side
+		margin-top: 75px
+		& li
+			margin-bottom: 14px
+			&:nth-last-child(1)
+				margin-bottom: 0
+			& a
+				font-size: 33px
+				font-weight: $mediumBold
+				color: $black
+				font-smoothing: antialiased
+				-webkit-font-smoothing: antialiased
+				font-family: 'Oxygen', sans-serif
+				&:focus
+					&::after
+						content: ''
+						position: absolute
+						margin-top: 7%
+						left: 25px
+						width: 50%
+						height: 3px
+						background: $black
+						animation-name: strike
+						animation-duration: 0.3s
+						animation-timing-function: linear
+						animation-iteration-count: 1
+				&.first
+					&:focus
+						&::after
+							content: ''
+							position: absolute
+							margin-top: 7%
+							left: 25px
+							width: 30%
+							height: 3px
+							background: $black
+							animation-name: strike-child
+							animation-duration: 0.3s
+							animation-timing-function: linear
+							animation-iteration-count: 1
+				&.second
+					&:focus
+						&::after
+							content: ''
+							position: absolute
+							margin-top: 7%
+							left: 25px
+							width: 42%
+							height: 3px
+							background: $black
+							animation-name: strike-second
+							animation-duration: 0.3s
+							animation-timing-function: linear
+							animation-iteration-count: 1
+
+	
+	@keyframes strike
+		0%
+			width : 0
+		100%
+			width: 50%
+
+	@keyframes strike-child
+		0%
+			width : 0
+		100%
+			width: 30% 
+
+	@keyframes strike-second
+		0%
+			width : 0
+		100%
+			width: 42%  
+
+	.footer-side
+		position: absolute
+		bottom: 80px
+
+	.fside-wrapper
+		padding-top: 5px
+		padding-bottom: 5px
+		& img
+			object-fit: contain
+			height: 20px
+		& span
+			font-size: 12px
+			color: $black
+			&:first-child
+				margin-right: 5px
+			&:nth-last-child(1)
+				margin-left: 5px
+			&.address
+				display: block
+				font-size: 12px
+				color: $gray
+				margin-right: 0
+				margin-left: 0
+
+	.fullWidth-mobile
+		display: block
+		margin-left: -15px
+		margin-right: -15px
+
+	.item-mobile
+		width: 100%
+		& img
+			object-fit: cover
+			height: 28rem
+			width: 100% $default
+
+	.active::before
+		content: ''
+		position: unset
+		bottom: unset
+		height: unset
+		width: unset
+		background-color: unset
+
+	.item-head_
+		background: $lightgray
+		height: 17rem
+		display: flex
+		justify-content: flex-start
+		align-items: flex-end
+		padding-left: 30px
+		padding-right: 15px
+		padding-bottom: 30px
+		& span
+			padding-right: 10rem
+			line-height: 1.2
+			font-size: $titleSize
+			font-weight: $mediumBold
+			color: $black
+	.medium-content
+		padding-left: 21px
+		padding-right: 21px
+		padding-top: 4rem
+		padding-bottom: 4rem
+		& .title-content-mb
+			font-size: $titleSize
+			font-weight: $mediumBold
+			color: $black
+			line-height: 1.2
+			padding-right: 3rem
+			display: block
+			margin-bottom: 3rem
+		& .lid-main
+			padding-left: 0
+			padding-bottom: 0
+		& p
+			font-size: 18px
+			font-weight: $regular
+			color: $gray
+
+	.graph-image
+		margin-top: 110px
+		& .row
+			& .col
+				margin-bottom: 1rem
+				padding: 0
+				position: relative
+				& .prop-img
+					& img
+						object-fit: cover
+						width: 100%
+				& .oneFull
+					& img
+						height: 13rem
+				& .twoFull
+					& img
+						height: 13rem
+				& .twoFull-right
+					padding-right: 0.7rem
+				& .twoFull-left
+					padding-left: 0.7rem
+	.title-image
+		position: absolute
+		z-index: 0
+		left: 0
+		background: $lightgray
+		width: 247px
+		height: 131px
+		padding-left: 37px
+		padding-top: 25px
+		margin-top: -85px
+		& span
+			font-size: 21px
+			color: $black
+			font-weight: $mediumBold
+
+
+	.right-same-title
+		left: unset
+		right: 0
+		width: 260px
+		text-align: center
+
+	.mini-title
+		width: auto
+		min-width: 160px
+		height: 205px
+
+	.venture-Full
+		left: unset
+		right: 0
+		height: 190px
+		text-align: right
+		width: 311px
+		padding-right: 18px
+
+	.groupwhite
+		& nav
+			transition: 0.6s ease-in-out
+			background-color: white
+
+	.footer-mobile
+		background-color: $lightgray
+
+	.list-footer
+		& li
+			margin-bottom: 23px
+			& a
+				font-size: 25px
+				font-weight: $mediumBold
+				color: $black
+
+	.box-humbre
+		margin-top: 70px
+		& .inset
+			margin-bottom: 10px
+			& img
+				object-fit: contain
+				height: 27px
+			& .address
+				display: block
+				font-size: 15px
+				color: $gray
+			& .info
+				font-size: 15px
+				color: $black
+				font-weight: $mediumBold
+
+	.copyright-mobile
+		margin-top: 50px
+		padding-top: 15px
+		border-top: 1px solid $gray
+		font-size: 15px
+		color: $gray
+
+	.container-op
+		padding-left: 31px
+		padding-right: 31px
+
+	.section-topper
+		background-color: $lightgray
+		min-height: 100px
+		padding-top: 150px
+		padding-bottom: 130px
+		margin-left: -15px
+		margin-right: -15px
+
+	.gallery-about
+		min-height: 100px
+		margin-left: -15px
+		margin-right: -15px
+		margin-top: 30px
+
+	.this-gallery
+		position: relative
+		z-index: 99
+		& img
+			width: 100%
+			object-fit: cover
+			height: 31rem
+
+	.boxed-gallery-0
+		background-color: $lightgray
+		position: absolute
+		z-index: 0
+		height: 26rem
+		width: 18rem
+		margin-top: -50px
+
+	.boxed-gallery-1
+		background-color: $lightgray
+		position: absolute
+		z-index: 0
+		right: 0
+		height: 31rem
+		width: 18rem
+		margin-top: -7rem
+
+	.consume
+		& span
+			display: block
+			&.minis-title
+				font-size: 15px
+				color: $gray
+				font-weight: $mediumBold
+				margin-bottom: 20px
+			&.large-title
+				font-size: 40px
+				color: $black
+				font-weight: $mediumBold
+				line-height: 1.2
+				padding-right: 55px
+				margin-bottom: 40px
+		& p
+			color: $gray
+			font-size: 18px
+
+	
+	.section-mopper
+		min-height: 100px
+		padding-top: 80px
+		padding-bottom: 80px
+		margin-left: -15px
+		margin-right: -15px
+
+	.section-limit
+		background-color: $lightgray
+		min-height: 100px
+		padding-top: 50px
+		padding-bottom: 50px
+		margin-left: -15px
+		margin-right: -15px
+
+	.consume-2
+		& p
+			font-size: 18px
+			color: $gray
+			&:first-child
+				font-size: 20px
+				color: $black
+
+	.product-list
+		margin-bottom: 20px
+		& span
+			font-size: 13px
+			font-weight: $mediumBold
+			color: $gray
+		& ul
+			margin: 0
+			margin-top: 10px
+			& li
+				font-size: 20px
+				color: $black
+				& .mini-tools
+					font-size: 15px
+
+	.icon-inLimmit
+		object-fit: contain
+		height: 28px
+
+	.img-inLimmit
+		width: 100%
+		object-fit: cover
+		margin-top: 15px
+		margin-bottom: 15px
+		height: 10rem
+		object-position: 10%
+
+	.title-inLimmit
+		font-size: 22px
+		color: $black
+		font-weight: $mediumBold
+		margin-top: 1rem
+		margin-bottom: 2rem
+		display: block
+
+	.limmitless-paragraph
+		& p
+			font-size: 18px
+			color: $gray
+			&:first-child
+				font-size: 20px
+				color: $black
+
+	.title-mop
+		display: block
+		font-size: 22px
+		color: $black
+		font-weight: $mediumBold
+		margin-bottom: 35px
+
+	.box-mop
+		margin-bottom: 40px
+		& .inside-title-mop
+			font-size: 20px
+			color: $black
+		& p
+			font-size: 18px
+			color: $gray
+			margin-top: 10px
+
+
+	.section-up-full
+		width: 100%
+		object-fit: cover
+		height: 12rem
+		margin-bottom: 1rem
+
+	.right-full
+		float: right
+		& li
+			display: inline-block
+			margin-right: 10px
+			& img
+				object-fit: contain
+				height: 30px
+
+	.section-no-mopper
+		padding-top: 0
+		&::before
+			content: ''
+			background-color: $lightgray
+			width: 100%
+			height: 158px
+			position: absolute
+			z-index: 0
+			margin-top: -16px
+		& .container-op
+			position: relative
+			z-index: 20
+
+	.item-arrow-mobile
+		bottom: -100px
+
+	.title-tounge
+		display: block
+		color: $gray
+		font-size: 18px
+
+	.arrowButton
+		margin-top: -37px
+		right: 22px
+		&:focus
+			background: transparent
+
+	.mailCenter
+		margin-bottom: 2rem
+		margin-top: 2rem
+
+	.body-content-fm
+		padding: 0
+
+	.disabled-btn
+		box-shadow: none
+		border: 0
+		background: none
+		display: flex
+		& img
+			margin-right: 10px
+			transform: translateY(1px)
+		& span
+			font-size: 15px
+			color: $blue
+			font-weight: 700
+			text-decoration: underline
+
+	.top-c
+		padding-bottom: 65px
+
+	.section-comp
+		margin-left: -15px
+		margin-right: -15px
+		line-height: 0
+		& img
+			width: 100%
+			object-fit: cover
+			height: 35rem
+			object-position: 80%
+
+	.right-round span.little-round
+		font-size: 15px
+
+	.right-round span.addressing
+		font-size: 20px
+		padding-right: 1rem
+
+	.right-round .detail-round li
+		font-size: 20px
+
+	.right-round .detail-round li a
+		font-size: 20px
+
+	.right-round .seeMap
+		font-size: 20px
+
+	.mooper-map
+		padding-top: 0
+
+	.mapMobile
+		width: 100%
+		object-fit: cover

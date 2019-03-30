@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700')
+@import color
+
+// font size
+$titleSize : 40px
+$littleLabel : 14px
+$paragraphLarge : 30px
+$paragraphMini : 18px
+$titleMedium : 25px
+
+// bold font
+$upCase : uppercase
+$mediumBold : 700
+$regular : 400
+$thin : 300
+
+// @mixin
+=font-smoothing($fontsmooth)
+	font-smoothing: $fontsmooth
+	-webkit-font-smoothing: $fontsmooth
+
+// classes font
+
+.defaultFont
+	font-family: 'Oxygen', sans-serif
+	+font-smoothing(antialiased)
+
+.default-font-gray
+	font-size: $paragraphLarge
+	font-weight: $regular
+	color: $gray
+	@extend .defaultFont
+	
+.default-font-black
+	font-size: $titleSize
+	font-weight: $regular
+	color: $black
+	@extend .defaultFont
+
+.default-mini-gray
+	font-size: $paragraphMini
+	font-weight: $regular
+	color: $gray
+	@extend .defaultFont
+
+.default-mini-gray-bold
+	font-size: $paragraphMini
+	font-weight: $mediumBold
+	color: $gray
+	@extend .defaultFont
+
+.default-font-black-bold
+	font-size: $paragraphLarge
+	font-weight: $mediumBold
+	color: $black
+	@extend .defaultFont
+
+.labelFactory-black
+	font-size: $titleSize
+	font-weight: $mediumBold
+	color: $black
+	@extend .defaultFont
+
+.labelFactory-white
+	font-size: $titleSize
+	font-weight: $mediumBold
+	color: $white
+	@extend .defaultFont
+
+.miniFontUpCase
+	font-size: $littleLabel
+	font-weight: $mediumBold
+	color: $black
+	text-transform: $upCase
+	@extend .defaultFont
+
+.miniFont-gray
+	font-size: $littleLabel
+	font-weight: $regular
+	color: $gray
+	@extend .defaultFont
+
+.miniFont-black
+	font-size: $littleLabel
+	font-weight: $mediumBold
+	color: $blackFont
+	@extend .defaultFont
+
+.miniFont-gray-bold
+	font-size: $littleLabel
+	font-weight: $mediumBold
+	color: $gray
+	@extend .defaultFont
+
+.miniParagraph
+	font-size: $paragraphMini
+	font-weight: $regular
+	color: $gray
+	@extend .defaultFont
+
+.miniParagraph-blue
+	font-size: $paragraphMini
+	font-weight: $mediumBold
+	color: $blue
+	@extend .defaultFont
+
+.miniParagraph-black
+	font-size: $paragraphMini
+	font-weight: $mediumBold
+	color: $black
+	@extend .defaultFont
+
+.miniNav
+	font-size: $littleLabel
+	font-weight: $mediumBold
+	color: $white
+	@extend .defaultFont
+
+.minInbox
+	font-size: $titleMedium
+	font-weight: $mediumBold
+	color: $black
+	@extend .defaultFont
+
+
+@media screen and (max-width: 1281px)
+	.labelFactory-black
+		font-size: 33px
+
+	.default-font-black
+		font-size: 25px
+
+	.miniParagraph
+		font-size: 17px
+
+
+
+

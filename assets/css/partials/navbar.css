@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css?family=Oxygen:300,400,700");
+.defaultFont, .default-font-gray, .default-font-black, .default-mini-gray, .default-mini-gray-bold, .default-font-black-bold, .labelFactory-black, .labelFactory-white, .miniFontUpCase, .miniFont-gray, .miniFont-black, .miniFont-gray-bold, .miniParagraph, .miniParagraph-blue, .miniParagraph-black, .miniNav, .sidenav-mtr li a, .minInbox {
+  font-family: "Oxygen", sans-serif;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased; }
+
+.default-font-gray {
+  font-size: 30px;
+  font-weight: 400;
+  color: #7A7A7A; }
+
+.default-font-black {
+  font-size: 40px;
+  font-weight: 400;
+  color: #000000; }
+
+.default-mini-gray {
+  font-size: 18px;
+  font-weight: 400;
+  color: #7A7A7A; }
+
+.default-mini-gray-bold {
+  font-size: 18px;
+  font-weight: 700;
+  color: #7A7A7A; }
+
+.default-font-black-bold {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000; }
+
+.labelFactory-black {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000000; }
+
+.labelFactory-white {
+  font-size: 40px;
+  font-weight: 700;
+  color: #FFFFFF; }
+
+.miniFontUpCase {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase; }
+
+.miniFont-gray {
+  font-size: 14px;
+  font-weight: 400;
+  color: #7A7A7A; }
+
+.miniFont-black {
+  font-size: 14px;
+  font-weight: 700;
+  color: #363636; }
+
+.miniFont-gray-bold {
+  font-size: 14px;
+  font-weight: 700;
+  color: #7A7A7A; }
+
+.miniParagraph {
+  font-size: 18px;
+  font-weight: 400;
+  color: #7A7A7A; }
+
+.miniParagraph-blue {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0074D9; }
+
+.miniParagraph-black {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000; }
+
+.miniNav, .sidenav-mtr li a {
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFFFFF; }
+
+.minInbox {
+  font-size: 25px;
+  font-weight: 700;
+  color: #000000; }
+
+@media screen and (max-width: 1281px) {
+  .labelFactory-black {
+    font-size: 33px; }
+
+  .default-font-black {
+    font-size: 25px; }
+
+  .miniParagraph {
+    font-size: 17px; } }
+.fixed-materialize {
+  left: 0;
+  right: 0;
+  position: fixed;
+  transition: 1s all;
+  height: auto; }
+  .fixed-materialize nav {
+    transition: 1s all; }
+
+.brand-logo {
+  padding-top: 4px !important; }
+
+.brand-logo > img {
+  object-fit: contain;
+  height: 30px;
+  filter: brightness(1) invert(0); }
+
+.sidenav-mtr li a {
+  letter-spacing: 1px; }
+.sidenav-mtr li:hover {
+  background-color: none !important; }
+
+.scrollizer nav {
+  background: rgba(255, 255, 255, 0.95) !important;
+  height: 74px !important;
+  line-height: 78px !important;
+  transition: 1s all;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2) !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2) !important; }
+  .scrollizer nav .nav-wrapper .container-fluid .brand-logo img {
+    filter: brightness(1) invert(0); }
+  .scrollizer nav .nav-wrapper .container-fluid .sidenav-mtr li a {
+    color: #000000; }
+  .scrollizer nav .nav-wrapper .container-fluid .sidenav-mtr li.active {
+    background: red !important; }
+    .scrollizer nav .nav-wrapper .container-fluid .sidenav-mtr li.active::before {
+      content: "";
+      position: absolute;
+      bottom: 1rem;
+      height: 2px;
+      width: 50px;
+      background-color: #7A7A7A; }
+
+.sidenav-mtr li a {
+  color: #000000; }
+
+.active::before {
+  content: "";
+  position: absolute;
+  bottom: 1.5rem;
+  height: 2px;
+  width: 50px;
+  background-color: #FFFFFF; }
+
+.lgo-hm > img {
+  object-fit: contain;
+  height: 30px;
+  filter: brightness(0) invert(1); }
+
+.side-nvH li a {
+  color: unset; }
+
+/*# sourceMappingURL=navbar.css.map */
