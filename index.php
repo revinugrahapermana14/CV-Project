@@ -9,7 +9,7 @@
 <body>
 	
 	<div class="wrapper-dekstop">
-		<?php include 'template/elements/navbarHomepage.php'; ?>
+		<?php include 'template/elements/navbar.php'; ?>
 
 		<div class="container-fluid">
 			<?php include 'template/homepage/index.php'; ?>

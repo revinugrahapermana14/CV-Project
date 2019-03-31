@@ -42,32 +42,16 @@
 					& img
 						filter: brightness(1) invert(0)
 				& .sidenav-mtr
-					& li
-						& a
-							color: $black
-						&.active
-							background: red $default
-							&::before
-								content: ''
-								position: absolute
-								bottom: 1rem
-								height: 2px
-								width: 50px
-								background-color: $gray
+		
+		& .destroy-white
+			& a
+				filter: brightness(1) invert(0)!important
+
 
 .sidenav-mtr
 	& li
 		& a
-			color: $black
-
-.active
-	&::before
-		content: ''
-		position: absolute
-		bottom: 1.5rem
-		height: 2px
-		width: 50px
-		background-color: $white
+			color: $gray
 
 .lgo-hm > img
 	object-fit: contain
@@ -78,3 +62,15 @@
 	& li
 		& a
 			color: unset
+
+.destroy-white
+	& a
+		filter: brightness(0) invert(1)
+
+.mn-linked
+	& a
+		position: relative
+
+.actived
+	& a
+		color: $black $default

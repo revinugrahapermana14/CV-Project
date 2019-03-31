@@ -78,4 +78,6 @@ document.addEventListener('DOMContentLoaded', function() {
       $('.bulletWrapper').find('span:nth-last-child(1)').addClass('basicBar').removeClass('toFullBar');
     });
 
+    $('.active-menu-first').parentsUntil('.nav-wrapper').addClass('destroy-white');
+
   });
